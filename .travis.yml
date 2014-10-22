@@ -17,10 +17,12 @@ before_script:
 
 # command to run tests
 script: nosetests --verbose
+
 matrix:
   allow_failures:
     - python: 3.3
     
+
 notifications:
      email:
          recipients:
