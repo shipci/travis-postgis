@@ -14,9 +14,12 @@ before_script:
   - psql -c 'CREATE EXTENSION postgis;' -U postgres -d travis_postgis
   - psql -c 'CREATE EXTENSION postgis_topology;' -U postgres -d travis_postgis
   - psql -f test_data.sql -U postgres -d travis_postgis
+  
 
 # command to run tests
-script: nosetests --verbose
+script: 
+  - nosetests --verbose
+  - sleep 5000
 
 
 matrix:
