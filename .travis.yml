@@ -19,7 +19,7 @@ before_script:
 # command to run tests
 script: 
   - nosetests --verbose
-  - sleep 5000
+  #- sleep 5000
 
 
 matrix:
