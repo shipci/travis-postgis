@@ -1,8 +1,10 @@
 language: python
 
+
 python:
   - "2.7"
   - "3.3"
+
 
 # command to install dependencies
 install:
@@ -20,7 +22,6 @@ before_script:
 script: 
   - nosetests --verbose
   #- sleep 5000
-
 
 matrix:
   allow_failures:
