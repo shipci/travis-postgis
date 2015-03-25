@@ -28,10 +28,3 @@ matrix:
     - python: 3.3
     
 
-notifications:
-     email:
-         recipients:
-             - vidya@shippable.com
-             - buildsampletest@gmail.com
-         on_success: always
-         on_failure: always
